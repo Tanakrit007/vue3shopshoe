@@ -17,8 +17,8 @@
     data() {
       return {
         products: [
-          { id: 1, name: 'รองเท้าผู้หญิงรุ่น A', price: 2500, image: 'path/to/imageC.jpg' },
-          { id: 2, name: 'รองเท้าผู้หญิงรุ่น B', price: 3000, image: 'path/to/imageD.jpg' },
+          { id: 1, name: 'VAPORMAX 2021 FK', price: 2500, image: 'image/VAPORMAX 2021 FK.jpg' },
+          { id: 2, name: 'WAFFLE ONE', price: 3000, image: 'image/WAFFLE ONE.jpg' },
           // เพิ่มผลิตภัณฑ์ตามต้องการ
         ],
       }

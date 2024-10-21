@@ -17,8 +17,8 @@
     data() {
       return {
         products: [
-          { id: 1, name: 'รองเท้าผู้ชายรุ่น A', price: 2500, image: 'path/to/imageA.jpg' },
-          { id: 2, name: 'รองเท้าผู้ชายรุ่น B', price: 3000, image: 'path/to/imageB.jpg' },
+          { id: 1, name: 'CORZA', price: 150, image: '/images/CORZA.svg' },
+          { id: 2, name: 'CORRELATE', price: 800, image: 'path/to/imageB.jpg' },
           // เพิ่มผลิตภัณฑ์ตามต้องการ
         ],
       }

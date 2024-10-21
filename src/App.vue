@@ -7,7 +7,7 @@ import ProductList from './components/ProductList.vue';
 <template>
   <header>
     <img alt="Shoe Store Logo" class="logo" src="./images/logo.svg" width="125" height="125" />
-    <h1>ร้านขายรองเท้า</h1>
+    <h1>SKO SHOP</h1>
     <nav>
       <RouterLink to="/">หน้าหลัก</RouterLink>
       <RouterLink to="/products/men">สินค้าผู้ชาย</RouterLink>
