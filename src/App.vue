@@ -19,6 +19,13 @@ import ProductList from './components/ProductList.vue';
   <main>
     <router-view /> <!-- เพิ่ม router-view สำหรับแสดงคอมโพเนนต์ตามเส้นทาง -->
   </main>
+  <footer class="footer">
+  <div class="footer-content">
+    <p>ติดต่อเรา: <a href="mailto:your-email@example.com">ss5453702@gmail.com</a></p>
+    <p>ที่อยู่: 123 ถนนความลับ, เมืองนครปฐม, ประเทศไทย,ไปรษณีย์:73000</p>
+  </div>
+</footer>
+
 </template>
 
 <style scoped>
@@ -65,6 +72,28 @@ main {
 
   .logo {
     margin: 0;
-  }
+  } 
 }
+.footer {
+  background-color: var(--color-background); /* ใช้สีพื้นหลังเดียวกับแอป */
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px; /* ระยะห่างระหว่างแถบข้อมูลติดต่อกับเนื้อหา */
+  border-top: 1px solid #ddd; /* เส้นขอบด้านบน */
+}
+
+.footer-content p {
+  margin: 5px 0; /* ระยะห่างระหว่างข้อความ */
+  color: var(--color-text); /* ใช้สีข้อความที่กำหนด */
+}
+
+.footer-content a {
+  color: #28a745; /* สีลิงค์ */
+  text-decoration: underline; /* ขีดเส้นใต้ */
+}
+
+.footer-content a:hover {
+  color: var(--color-button); /* เปลี่ยนสีเมื่อโฮเวอร์ */
+}
+
 </style>

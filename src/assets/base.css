@@ -5,6 +5,30 @@
   --color-button-hover: #0056b3; /* สีเมื่อโฮเวอร์ปุ่ม */
 }
 
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 button {
   background-color: var(--color-button);
   color: white;
@@ -13,21 +37,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1em;
 }
 
 button:hover {
   background-color: var(--color-button-hover);
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
 }
 
 /* เพิ่มเงาให้กับเนื้อหา */
@@ -35,3 +49,25 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* สไตล์สำหรับสินค้า */
+.products {
+  display: flex;
+  flex-wrap: wrap; /* ให้สินค้าสามารถอยู่ในแถวใหม่ได้ */
+  margin-bottom: 20px; /* ระยะห่างระหว่างกลุ่มสินค้า */
+}
+
+.product {
+  flex: 1 1 30%; /* ปรับขนาดสินค้าให้แสดง 3 ตัวในแต่ละแถว */
+  margin: 10px; /* เพิ่มระยะห่างระหว่างสินค้า */
+  padding: 20px;
+  background-color: white; /* สีพื้นหลังของสินค้า */
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
