@@ -17,7 +17,7 @@ import ProductList from './components/ProductList.vue';
   </header>
 
   <main>
-    <ProductList />
+    <router-view /> <!-- เพิ่ม router-view สำหรับแสดงคอมโพเนนต์ตามเส้นทาง -->
   </main>
 </template>
 
