@@ -10,17 +10,38 @@
 </template>
 
 <script>
+
 export default {
-  name: 'ProductList',
+  name: "ProductList",
   data() {
     return {
       products: [
-        { id: 1, name: 'CORZA', price: 150, src: '/images/CORZA.jpg' },
-        { id: 2, name: 'CORRELATE', price: 800, src: '/images/CORRELATE.svg' },
-        { id: 3, name: 'EXPERIENCE-RN-11', price: 2500, src: '/images/EXPERIENCE-RN-11.svg' },
-        { id: 4, name: 'VAPORMAX 2021 FK', price: 2500, src: '/images/VAPORMAX 2021 FK.jpg' },
-        { id: 5, name: 'WAFFLE ONE', price: 2500, src: '/images/WAFFLE ONE.jpg' },
-        { id: 6, name: 'ONDECK FLIP FLOP', price: 2500, src: '/images/ONDECK FLIP FLOP.jpg' },
+        { id: 1, name: "CORZA", price: 150, src: "@/images/CORZA.jpg" },
+        { id: 2, name: "CORRELATE", price: 800, src: "@/images/CORRELATE.svg" },
+        {
+          id: 3,
+          name: "EXPERIENCE-RN-11",
+          price: 2500,
+          src: "/images/EXPERIENCE-RN-11.svg",
+        },
+        {
+          id: 4,
+          name: "VAPORMAX 2021 FK",
+          price: 2000,
+          src: "/images/VAPORMAX 2021 FK.jpg",
+        },
+        {
+          id: 5,
+          name: "WAFFLE ONE",
+          price: 4500,
+          src: "/images/WAFFLE ONE.jpg",
+        },
+        {
+          id: 6,
+          name: "ONDECK FLIP FLOP",
+          price: 3000,
+          src: "/images/ONDECK FLIP FLOP.jpg",
+        },
       ],
     };
   },
@@ -29,9 +50,9 @@ export default {
       this.$router.push(`/product/${id}`);
     },
     formatCurrency(value) {
-      return new Intl.NumberFormat('th-TH', {
-        style: 'currency',
-        currency: 'THB',
+      return new Intl.NumberFormat("th-TH", {
+        style: "currency",
+        currency: "THB",
       }).format(value);
     },
   },
