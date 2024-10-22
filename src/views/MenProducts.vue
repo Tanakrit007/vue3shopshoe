@@ -4,7 +4,7 @@
     <h1>สินค้าผู้ชาย</h1>
     <div class="product-list">
       <div v-for="product in products" :key="product.id" class="product-item">
-        <img :src="product.image" :alt="product.name" />
+        <img :src="`/vue3shopshoe/src/images/${product.src}`" :alt="product.name" />
         <h2>{{ product.name }}</h2>
         <p>{{ product.price }} บาท</p>
         <button @click="addToCart(product)">เพิ่มไปยังรถเข็น</button>
@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "CORZA", price: 150, image: "@/images/CORZA.svg" },
-        { id: 2, name: "CORRELATE", price: 800, image: "path/to/imageB.jpg" },
+        { id: 1, name: "CORZA", price: 150, image: "CORZA.svg" },
+        { id: 2, name: "CORRELATE", price: 800, image: "imageB.jpg" },
         // เพิ่มผลิตภัณฑ์ตามต้องการ
       ],
     };
